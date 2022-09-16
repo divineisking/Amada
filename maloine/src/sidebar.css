@@ -1,0 +1,11 @@
+.sidebar{
+    width: 150px;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    color: aqua;
+    height: 300px;
+    background-color: rgb(1, 14, 41);
+
+}
