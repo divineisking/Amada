@@ -1,26 +1,37 @@
+import React, {useState} from 'react'
 import './App.css';
-import Sidebar from './sidebar'
-
 export default function App() {
+
+  const [count, setCount] = useState(100);
+  function increment(){
+    setCount((prevCount) => prevCount *2 )
+  };
+
+  function reset(){
+    setCount(100)
+  };
+
+  function decrement(){
+    setCount((prevCount) => prevCount /2)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-      <Sidebar/>
-        
-        <h1> Divine E. Nnodim</h1>
-        <p>
-          Web Developer/Software Engineer.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-      </header>
+      <div >
+      <button onClick={decrement}>
+        Decrement
+      </button>
+
+        {count}
+
+        <button onClick={increment}>
+        Increment
+      </button>
+      </div>
+      <button className='reset' onClick={reset}>
+        Reset
+      </button>
+      
+      
 
       
     </div>
