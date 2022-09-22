@@ -1,40 +1,41 @@
 import React, {useState} from 'react'
 import './App.css';
+import Data from './data'
+
 export default function App() {
 
-  const [count, setCount] = useState(100);
-  function increment(){
-    setCount((prevCount) => prevCount *2 )
-  };
+console.log(Data)
+  const [items, setItems] = useState(Data)
+function click(){
 
-  function reset(){
-    setCount(100)
-  };
+  const item =  `item ${Data.length + 1}`
+  console.log(item)
+  setItems((prevItem) => [...prevItem, item] )
+}
 
-  function decrement(){
-    setCount((prevCount) => prevCount /2)
-  }
+function clearAll(){
+  setItems([])
+}
+
+function deleteSingle(){
+
+};
+
+const hola = items.map(function(item, index){
+  return (<div key={index} >{item.title}
+  <span onClick={deleteSingle}>X</span></div>)
+})
   return (
     <div className="App">
-      <div >
-      <button onClick={decrement}>
-        Decrement
+      <button onClick={click}>
+        Add new item
       </button>
-
-        {count}
-
-        <button onClick={increment}>
-        Increment
+      {hola}
+      <button onClick={clearAll}>
+        Clear all
       </button>
-      </div>
-      <button className='reset' onClick={reset}>
-        Reset
-      </button>
-      
-      
-
-      
     </div>
+    
     
   );
 }
