@@ -10,3 +10,10 @@
   font-weight: bold;
   color: white;
 }
+
+.button{
+  background-color: red;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
