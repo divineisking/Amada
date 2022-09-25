@@ -6,7 +6,6 @@ function App() {
   /*const bdlist = Data.map(function(person, index){
     return <Person key={index} persons={person} />
   })*/
-
   return (
     <div className="App">
       <h1>

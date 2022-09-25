@@ -35,3 +35,14 @@
     border-radius: 55%;
     margin: 0px 10px 0px 10px;
 }
+
+.deleteperson{
+    background-color: red;
+    color: wheat;
+    margin-left: 25px;
+    text-align: center;
+    width: 25px;
+    font-size: large;
+    font-weight: bold;
+
+}

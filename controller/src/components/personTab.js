@@ -1,9 +1,17 @@
 import React from 'react';
 import './persons.css'
+//import Data from '../data'
 
 
-export default function Person(props){
+export default function Person(props, {deletePerson}){
+
+    /*function wrapDeletePerson(){
+        
+        console.log(deletePerson)
+    }*/
+
         const {name,age,bd,img} = props.persons;
+
 
     return(
        
@@ -13,6 +21,7 @@ export default function Person(props){
             <p>{bd}
             </p>
             <p>{age}</p>
+            <button className='deleteperson' onClick={deletePerson}>X</button>
         </div>
 
 

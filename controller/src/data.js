@@ -5,6 +5,7 @@ import pumpkin from './assets/pumpkin.png'
 
 const persons = [
     {
+        id: 1,
         name: 'Mike Collins',
         age: '24',
         bd: '30th May',
@@ -12,6 +13,7 @@ const persons = [
     },
 
     {
+        id:2,
         name: 'Lily Star',
         age: '28',
         bd: '27th July',
@@ -19,6 +21,7 @@ const persons = [
     },
 
     {
+        id:3,
         name : 'Ara Lynch',
         age : '22',
         bd : '10th Sept',
@@ -26,6 +29,7 @@ const persons = [
     },
 
     {
+        id: 4,
         name: 'Mike Collins',
         age: '24',
         bd: '27th May',
@@ -33,6 +37,7 @@ const persons = [
     },
 
     {
+        id:5,
         name: 'Alexis Sancho',
         age: '20',
         bd: '20th May',
@@ -40,6 +45,7 @@ const persons = [
     },
 
     {
+        id:6,
         name: 'Alexis Sancho',
         age: '20',
         bd: '20th May',
