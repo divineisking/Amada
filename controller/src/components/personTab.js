@@ -3,7 +3,7 @@ import './persons.css'
 //import Data from '../data'
 
 
-export default function Person(props, {deletePerson}){
+export default function Person(props,{deletePerson}){
 
     /*function wrapDeletePerson(){
         
