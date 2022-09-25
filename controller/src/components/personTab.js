@@ -3,7 +3,7 @@ import './persons.css'
 //import Data from '../data'
 
 
-export default function Person(props,{deletePerson}){
+export default function Person(props){
 
     /*function wrapDeletePerson(){
         
@@ -21,7 +21,7 @@ export default function Person(props,{deletePerson}){
             <p>{bd}
             </p>
             <p>{age}</p>
-            <button className='deleteperson' onClick={deletePerson}>X</button>
+            <button className='deleteperson' onClick={props.deletePerson}>X</button>
         </div>
 
 
