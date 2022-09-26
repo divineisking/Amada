@@ -44,5 +44,17 @@
     width: 25px;
     font-size: large;
     font-weight: bold;
+    border: 0;
 
+}
+
+.deleteAll{
+
+    background-color:red;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: bold;
+    border: 0;
 }

@@ -10,7 +10,9 @@ export default function Person(props){
         console.log(deletePerson)
     }*/
 
-        const {name,age,bd,img} = props.persons;
+        const {name,age,bd,img,id} = props.persons;
+
+        const deletePerson = props.deletePerson
 
 
     return(
@@ -21,7 +23,7 @@ export default function Person(props){
             <p>{bd}
             </p>
             <p>{age}</p>
-            <button className='deleteperson' onClick={props.deletePerson}>X</button>
+            <button className='deleteperson' onClick={()=>deletePerson(id)}>X</button>
         </div>
 
 
