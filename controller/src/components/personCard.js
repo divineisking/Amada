@@ -21,12 +21,17 @@ export default function Pcard(){
         setPerson([])
     }
 
+    const num = persons.length
+
+    const numcheck = num > 1 ? 'Birthdays This Month ' : 'Birthday This Month'
+
     const bdlist = persons.map(function(person){
     return <Ptab key={person.id} persons={person} deletePerson={deletePerson}/>
     
   })
     return(
         <div className='personCard'>
+            <h4> {num} {numcheck} </h4>
             {bdlist}
 
             <button className='deleteAll' onClick={deleteAll}>Delete All</button>
